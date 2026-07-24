@@ -1,214 +1,446 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인문 철학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #2563eb;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-ivory-ink">
+    <title>이대 클럽 추천 가이드 — 처음 방문자를 위한 조건별 선택 안내</title>
+    <meta name="description" content="이대 클럽 추천의 모든 것. 분위기, 음악 장르, 인원 구성별 맞춤 안내. 처음 방문자가 알아야 할 조건과 에티켓을 정리해 드립니다.">
+    <meta name="keywords" content="이대 클럽, 이대 클럽 추천, 이대 클럽 가이드, 클럽 선택 기준, 이대 클럽 조건, 클럽 에티켓, 이대 나이트라이프">
+    <link rel="canonical" href="https://idae-club-note.go-bangbae-room.xyz">
+    <meta property="og:title" content="이대 클럽 추천 가이드 — 처음 방문자를 위한 조건별 선택 안내">
+    <meta property="og:description" content="이대 클럽 추천의 모든 것. 분위기, 음악 장르, 인원 구성별 맞춤 안내.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://idae-club-note.go-bangbae-room.xyz">
+    <meta property="og:site_name" content="이대 클럽 추천 가이드">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="이대 클럽 추천 가이드 — 처음 방문자를 위한 조건별 선택 안내">
+    <meta name="twitter:description" content="이대 클럽 추천의 모든 것. 분위기, 음악 장르, 인원 구성별 맞춤 안내.">
+    <style>
+        @font-face {
+            font-family: 'SerifSystem';
+            src: local('Georgia'), local('Times New Roman'), local('serif');
+        }
+        :root {
+            --color-primary: #2c2416;
+            --color-secondary: #fdfaf3;
+            --color-accent: #8a7355;
+            --color-accent-light: #a89b88;
+            --color-border: rgba(44, 36, 22, 0.2);
+            --font-serif: 'SerifSystem', Georgia, 'Times New Roman', serif;
+            --space-dense-gap: 16px;
+            --space-dense-padding: 24px;
+            --space-section-gap: 40px;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-serif);
+            background-color: var(--color-secondary);
+            color: var(--color-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Layout */
+        .m-wrap-7rk1 {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: var(--space-dense-padding);
+        }
+        .k-ico-j6us {
+            position: relative;
+            min-height: 85vh;
+            display: flex;
+            align-items: flex-end;
+            padding: var(--space-dense-padding);
+            background: linear-gradient(135deg, var(--color-primary) 0%, #1a140d 100%);
+            overflow: hidden;
+        }
+        .k-ico-j6us__content {
+            position: relative;
+            z-index: 2;
+            color: var(--color-secondary);
+            max-width: 720px;
+            padding-bottom: 60px;
+        }
+        .k-ico-j6us__title {
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            font-weight: 900;
+            line-height: 1.05;
+            letter-spacing: -0.03em;
+            margin-bottom: var(--space-dense-gap);
+            transform: skewY(-2deg);
+            transform-origin: bottom left;
+        }
+        .k-ico-j6us__subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.4rem);
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            max-width: 500px;
+            border-left: 2px solid var(--color-accent);
+            padding-left: var(--space-dense-gap);
+            opacity: 0.9;
+        }
+        .k-ico-j6us__graphic {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(to bottom right, transparent 40%, rgba(138, 115, 85, 0.15));
+            clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        .q-grid-rw3n-intro {
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+            margin: var(--space-section-gap) 0;
+            padding: var(--space-dense-padding) 0;
+        }
+        .q-grid-rw3n-intro p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--color-accent);
+            text-align: center;
+            letter-spacing: 0.08em;
+        }
+        /* Section Specific */
+        .n-img-cpqs-section {
+            margin-bottom: var(--space-section-gap);
+        }
+        .v-grid-3t1j-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            display: block;
+            margin-bottom: var(--space-dense-padding);
+        }
+        .n-img-cpqs-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .n-img-cpqs-table th, 
+        .n-img-cpqs-table td {
+            padding: var(--space-dense-gap);
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .n-img-cpqs-table th {
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            width: 30%;
+        }
+        .n-img-cpqs-table tr:last-child th,
+        .n-img-cpqs-table tr:last-child td {
+            border-bottom: none;
+        }
+        .v-foot-krxl {
+            list-style: none;
+            counter-reset: check-counter;
+        }
+        .v-foot-krxl li {
+            counter-increment: check-counter;
+            padding: var(--space-dense-gap) 0;
+            border-bottom: 1px solid var(--color-border);
+            font-size: 1.05rem;
+            position: relative;
+            padding-left: 40px;
+        }
+        .v-foot-krxl li::before {
+            content: counter(check-counter, decimal-leading-zero);
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        .v-foot-krxl li:last-child {
+            border-bottom: none;
+        }
+        .k-box-uchx-section {
+            background: var(--color-primary);
+            color: var(--color-secondary);
+            padding: var(--space-section-gap) var(--space-dense-padding);
+            margin: var(--space-section-gap) calc(-1 * var(--space-dense-padding));
+        }
+        .k-box-uchx-question {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: var(--space-dense-gap);
+            letter-spacing: 0.02em;
+            color: var(--color-secondary);
+        }
+        .k-box-uchx-answer {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: var(--space-section-gap);
+            opacity: 0.9;
+            max-width: 90%;
+        }
+        .k-box-uchx-answer:last-child {
+            margin-bottom: 0;
+        }
+        .t-hero-8d5c-block {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-dense-gap);
+            padding: var(--space-dense-padding) 0;
+            border-top: 1px solid var(--color-border);
+            margin-top: var(--space-section-gap);
+        }
+        .t-hero-8d5c-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--color-accent);
+        }
+        .t-hero-8d5c-bio {
+            font-size: 0.95rem;
+            color: var(--color-primary);
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+        .q-btn-l4al {
+            text-align: center;
+            padding: var(--space-dense-padding) 0;
+            border-top: 1px solid var(--color-border);
+            font-size: 0.85rem;
+            color: var(--color-primary);
+            opacity: 0.7;
+        }
+        /* Nav & Mobile */
+        .x-wrap-yzc3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-dense-padding) 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .k-btn-i9mz {
+            font-weight: 900;
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            color: var(--color-primary);
+        }
+        .m-ico-ka4o {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+        .m-ico-ka4o__line {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: var(--color-primary);
+            margin: 4px 0;
+            transition: all 0.3s ease;
+        }
+        .x-wrap-yzc3-links {
+            display: flex;
+            gap: var(--space-dense-padding);
+        }
+        .x-wrap-yzc3-link {
+            text-decoration: none;
+            color: var(--color-primary);
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .x-wrap-yzc3-link:hover {
+            color: var(--color-accent);
+        }
+
+        @media (max-width: 768px) {
+            .k-ico-j6us { min-height: 70vh; }
+            .k-ico-j6us__title { transform: none; }
+            .k-ico-j6us__graphic { display: none; }
+            .m-ico-ka4o { display: block; }
+            .x-wrap-yzc3-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--color-secondary);
+                flex-direction: column;
+                padding: var(--space-dense-padding);
+                border-bottom: 1px solid var(--color-border);
+            }
+            .x-wrap-yzc3-links.is-open { display: flex; }
+            .n-img-cpqs-table th { width: 40%; }
+            .k-box-uchx-section {
+                margin-left: 0;
+                margin-right: 0;
+                padding-left: var(--space-dense-padding);
+                padding-right: var(--space-dense-padding);
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "이대 클럽 추천 가이드",
+        "url": "https://idae-club-note.go-bangbae-room.xyz",
+        "author": {
+            "@type": "Person",
+            "name": "박지은"
+        },
+        "description": "이대 클럽 추천의 모든 것. 분위기, 음악 장르, 인원 구성별 맞춤 안내."
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.8;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "이대 클럽 방문 시 연령 제한이 있나요?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "네, 대부분의 이대 지역 클럽은 만 19세 이상 입장이 가능합니다. 신분증을 꼭 지참하시고, 입구에서 확인 절차를 거치게 되니 이 점 참고하세요."
+            }
+        }, {
+            "@type": "Question",
+            "name": "이대 클럽들은 주로 어떤 음악 장르가 나오나요?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "이대 클럽들은 다양하지만, 주로 EDM, 힙합, 라틴 계열 음악을 중심으로 구성됩니다. 각 클럽별로 특정 장르에 특화되어 있는 경우가 많으니, 방문 전 해당 클럽의 최근 이벤트 정보를 확인하는 것을 추천합니다."
+            }
+        }, {
+            "@type": "Question",
+            "name": "혼자 가도 괜찮은 분위기의 클럽이 있을까요?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "물론입니다. 이대 클럽 중에는 바(bar) 형태의 테이블이 많아 비교적 편안하게 혼자 즐길 수 있는 곳도 있습니다. 웨이브나 댄스 플로어가 강조된 곳보다는, 음료를 마시며 음악을 감상하는 공간을 찾아보시는 것이 좋습니다."
+            }
+        }, {
+            "@type": "Question",
+            "name": "주차장이 있나요? 대중교통 이용이 편리한가요?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "이대역 주변에 위치한 클럽들이 많아 대중교통(지하철 2호선 이대역) 이용이 가장 편리합니다. 자체 주차장을 보유한 클럽은 드문 편이니, 가능하다면 대중교통을 이용하시는 것을 권장합니다."
+            }
+        }]
     }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 400;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(37, 99, 235, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+    </script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="logo">KR.GEEK</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="meta-tag">// SWISS ACCENTED GRID SYSTEM</div>
-      <h1>인문 철학 지식 저널 및 아카이브</h1>
-      <div class="content">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인문 철학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-        <a href="posts/normal-1.html" class="post-card">
-          <h3>바뤼흐 스피노자의 에티카(Ethica) 속 동물의 코나투스(Conatus)와 비주류 정서론 분석</h3>
-          <p>네덜란드의 고독한 렌즈 가공 철학자 스피노자의 주저 에티카에서 피력된 코나투스(자신의 존재를 유지하려는 영속적 본성 노력) 개념을 동물에게 투영해 볼 때, 인간 중심적 관점에서 해...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="post-card">
-          <h3>질 들뢰즈의 리좀(Rhizome) 공간 역학으로 조망한 아날로그 골목길의 인문 구조학</h3>
-          <p>시작과 끝이 규정되지 않고 끊임없이 파편적으로 연결되며 영토를 가로지르는 들뢰즈의 리좀 모델을 격자형 대도시가 아닌 오랜 유기적 골목길의 공간 미학에 적용해 볼 때, 규칙적 구획이...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="post-card">
-          <h3>중세 스콜라 철학의 영적 통신 논쟁: 천사들의 비물질적 메시지 전달 속도와 주파수</h3>
-          <p>중세 대철학자 토마스 아퀴나스가 주창했던 천사들의 언어(Speech of Angels) 형이상학은 물리적 육체와 공간의 장벽이 없는 순수한 지성적 존재들이 어떻게 공간을 왜곡하고 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="post-card">
-          <h3>지적 인문 철학 독자들을 위해 준비한 백링크 대행 사이트 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="post-card">
-          <h3>지적 인문 철학 독자들을 위해 준비한 백링크 대행 사이트 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
+    <nav class="x-wrap-yzc3 m-wrap-7rk1">
+        <a href="#" class="k-btn-i9mz">이대 클럽 가이드</a>
+        <button class="m-ico-ka4o" aria-label="메뉴 열기">
+            <span class="m-ico-ka4o__line"></span>
+            <span class="m-ico-ka4o__line"></span>
+            <span class="m-ico-ka4o__line"></span>
+        </button>
+        <div class="x-wrap-yzc3-links">
+            <a href="#selection" class="x-wrap-yzc3-link">선택 기준</a>
+            <a href="#checklist" class="x-wrap-yzc3-link">확인사항</a>
+            <a href="#faq" class="x-wrap-yzc3-link">자주묻는질문</a>
         </div>
-      </div>
+    </nav>
+
+    <main>
+        <section class="k-ico-j6us">
+            <div class="k-ico-j6us__graphic"></div>
+            <div class="k-ico-j6us__content">
+                <h1 class="k-ico-j6us__title">이대 클럽<br>추천 가이드</h1>
+                <p class="k-ico-j6us__subtitle">단순한 장소 나열이 아닌, 당신이 찾는 분위기를 발견하기 위한 안내서</p>
+            </div>
+        </section>
+
+        <div class="m-wrap-7rk1">
+            <div class="q-grid-rw3n-intro">
+                <p>“첫 클럽, 어떤 골라야 할까?” 이 질문에서 시작합니다.</p>
+            </div>
+
+            <section id="selection" class="n-img-cpqs-section">
+                <span class="v-grid-3t1j-label">선택 기준</span>
+                <p style="margin-bottom: var(--space-dense-padding); font-size: 1.1rem;">각 클럽의 성격은 다음과 같은 요소들로 구분됩니다. 당신이 중요하게 생각하는 순서대로 점수를 매겨보세요.</p>
+                <table class="n-img-cpqs-table">
+                    <thead>
+                        <tr>
+                            <th>기준</th>
+                            <th>설명 및 예시</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>음악 장르</td>
+                            <td>EDM(하우스, 트랜스) / 힙합 & 랩 / 라틴 & 레게톤 / 락 & 인디. 자신의 취향이 가장 명확하게 드러나는 요소입니다.</td>
+                        </tr>
+                        <tr>
+                            <td>인원 구성</td>
+                            <td>소규모 파티(10-20명) / 중형 그룹(30-50명) / 대형 파티(100명 이상). 예약이 필요한지, 예약 가능한 인원이 있는지 확인하세요.</td>
+                        </tr>
+                        <tr>
+                            <td>분위기 & 코드</td>
+                            <td>트렌디하고 캐주얼 / 격식 있고 어른스러운 / 열정적이고 자유로운. 옷차림이나 텐션에 암묵적 규칙이 있을 수 있습니다.</td>
+                        </tr>
+                        <tr>
+                            <td>가격대 & 시스템</td>
+                            <td>입장료 포함 여부, 주류 가격대(일반酒吧 vs 고급酒吧), 카바나 또는 테이블 예약 시스템 유무가 예산을 좌우합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>디테일 & 편의</td>
+                            <td>테이블 좌석 배치, 조명 분위기, 파티션 존재 여부, 음향 시스템의 질 등. 직접 가보지 않으면 모르는 세부사항들입니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="checklist" class="n-img-cpqs-section">
+                <span class="v-grid-3t1j-label">이용 전 확인사항</span>
+                <ol class="v-foot-krxl">
+                    <li>방문 전 공식 SNS 채널을 통해 당일 이벤트와 DJ 라인업을 반드시 확인하세요.</li>
+                    <li>대부분의 클럽은 목요일부터 주말까지 성업하며, 월요일~수요일은 휴업 또는 이벤트가 적습니다.</li>
+                    <li>보통 10시 이후가 피크 시간대입니다. 이른 시간에 가면 한산하게 즐기고 나갈 수도 있습니다.</li>
+                    <li>현금을 준비해두는 것이 좋습니다. 일부 카드 결제가 안 되거나, 팁 등을 현금으로 요구하는 경우가 있습니다.</li>
+                    <li>개인 소지품(가방, 지갑, 휴대폰) 관리에 특별히 신경 써야 합니다. 도난이나 분실 위험이 높습니다.</li>
+                </ol>
+            </section>
+
+            <section id="faq" class="k-box-uchx-section">
+                <span class="v-grid-3t1j-label" style="color: var(--color-accent-light);">자주 묻는 질문</span>
+                <dl>
+                    <dt class="k-box-uchx-question">Q. 이대 클럽 방문 시 연령 제한이 있나요?</dt>
+                    <dd class="k-box-uchx-answer">네, 대부분의 이대 지역 클럽은 만 19세 이상 입장이 가능합니다. 신분증을 꼭 지참하시고, 입구에서 확인 절차를 거치게 되니 이 점 참고하세요.</dd>
+
+                    <dt class="k-box-uchx-question">Q. 이대 클럽들은 주로 어떤 음악 장르가 나오나요?</dt>
+                    <dd class="k-box-uchx-answer">이대 클럽들은 다양하지만, 주로 EDM, 힙합, 라틴 계열 음악을 중심으로 구성됩니다. 각 클럽별로 특정 장르에 특화되어 있는 경우가 많으니, 방문 전 해당 클럽의 최근 이벤트 정보를 확인하는 것을 추천합니다.</dd>
+
+                    <dt class="k-box-uchx-question">Q. 혼자 가도 괜찮은 분위기의 클럽이 있을까요?</dt>
+                    <dd class="k-box-uchx-answer">물론입니다. 이대 클럽 중에는 바(bar) 형태의 테이블이 많아 비교적 편안하게 혼자 즐길 수 있는 곳도 있습니다. 웨이브나 댄스 플로어가 강조된 곳보다는, 음료를 마시며 음악을 감상하는 공간을 찾아보시는 것이 좋습니다.</dd>
+
+                    <dt class="k-box-uchx-question">Q. 주차장이 있나요? 대중교통 이용이 편리한가요?</dt>
+                    <dd class="k-box-uchx-answer">이대역 주변에 위치한 클럽들이 많아 대중교통(지하철 2호선 이대역) 이용이 가장 편리합니다. 자체 주차장을 보유한 클럽은 드문 편이니, 가능하다면 대중교통을 이용하시는 것을 권장합니다.</dd>
+                </dl>
+            </section>
+
+            <aside class="t-hero-8d5c-block">
+                <span class="t-hero-8d5c-name">박지은</span>
+                <p class="t-hero-8d5c-bio">서울 지역의 나이트라이프와 클럽 문화를 5년간 취재하고 정리해온 로컬 컬처 리포터입니다. 이대, 신촌 일대의 상권 변화와 문화 흐름에 주목하고 있습니다.</p>
+            </aside>
+        </div>
     </main>
-    <footer>
-      <div>&copy; 2026 KR.GEEK. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
+
+    <footer class="q-btn-l4al">
+        <div class="m-wrap-7rk1">
+            <p>© 2023 이대 클럽 추천 가이드. 무단 복제 및 배포를 금합니다.</p>
+            <p style="margin-top: var(--space-dense-gap);">본 가이드는 정보 제공 목적이며, 특정 업체의 영업 시간이나 시설 정보는 변동될 수 있습니다.</p>
+        </div>
     </footer>
-  </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.m-ico-ka4o').addEventListener('click', function() {
+            this.classList.toggle('is-active');
+            document.querySelector('.x-wrap-yzc3-links').classList.toggle('is-open');
+        });
+    </script>
 </body>
 </html>
